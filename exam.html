@@ -1,17 +1,190 @@
-<!DOCTYPE html>
 <html>
-    <head>
-<style>
-    a.{
-        margin-top: 2px;
-        width:150px;
-        height: 200px;
-        background-color: brown;
-    }
-</style>
-    </head>
-    <body>
-       <div class="a"></div>
+<head>
+    <style>
+        body {
+            background-color: rgb(235, 208, 150);
+            margin: 0;
+            padding: 0;
+           
+            font-family: sans-serif;
+            background-size: 1920px, 1080px;
+        }
 
+        .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px; 
+      margin-right: 20px;
+      align-items: flex-start;
+     
+      font-weight: bolder;
+      font-size: 40px;
+      
+    }
+
+        header {
+      background-color: #f49921;
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      font-size: 36px;
+      text-align: center;
+    }
+    
+        .ad {
+            height: 250px;
+            width: 700px;
+            background-image: url('https://www.impericon.com/cdn/shop/articles/Jujutsu_Kaisen.webp?v=1718630060');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .ad:hover {
+            transform: scale(1.1);
+        }
+
+        .ad2 {
+            margin-top: 20px;
+            height: 250px;
+            width: 700px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .ad2:hover {
+            transform: scale(1.1);
+        }
+
+        .im {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .im img {
+            height: 260px;
+            width: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .im img:hover {
+            transform: scale(1.1);
+        }
+
+        .mangatext {
+            width: 1920px;
+            height: 1080px;
+            margin-top: 10px;
+            margin-left: 25px;
+
+        }
+         
+    
+
+        .manga-scroll {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap; /* ensures everything stays in one line */
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px 25px;
+            scroll-behavior: smooth;
+            align-items: flex-start;
+}
+
+        .manga-scroll::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .manga-scroll::-webkit-scrollbar-thumb {
+            background: #aaa;
+            border-radius: 10px;
+        }
+
+        .manga-item {
+            flex: auto;
+            width: 180px;
+            text-align: center;
+            background-color: rgb(197, 129, 39);
+            border-radius: 10px;
+            border:2px solid rgb(153, 97, 51);
+            overflow: hidden;
+            box-sizing: border-box;
+            display: inline;
+            text-align: center;
+            vertical-align: top;
+            margin-left: 1px;
+            margin-right: 1px;
+    
+        }
+
+        .manga-item img {
+            height: 260px;
+            width: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .manga-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .manga-item p {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .manga-item p:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-links">
+          <a href="#">9A Kh.Khuslen</a>
+        </nav>
+      </header>
+
+
+    
+   
+    <div class="mangatext">
+        <div class="manga-scroll">
+            <div class="manga-item">
+                <img src="https://static.wikia.nocookie.net/blue_period/images/3/36/Volume_01_Cover_EN.jpg/revision/latest?cb=20210313085039">
+                <p>manga heehhh</p>
+ 
+            </div>
+            <div class="manga-item">
+                <img src="https://i0.wp.com/www.comicbookrevolution.com/wp-content/uploads/2022/12/Kaiju-No-8-Chapter-73.1-Special-Illustration.jpg?ssl=1">
+                <p>manga ,hahahh</p>
+            </div>
+            <div class="manga-item">
+                <img src="https://m.media-amazon.com/images/I/81-lYf2IeSL.jpg">
+                <p>manga muhahahh most fav</p>
+            </div>
+            <div class="manga-item">
+                <img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2021/12/02150705/Hunter-x-Hunter-Vol.-34.png">
+                <p>manga heheheh</p>
+            </div>
+        </div>
     </body>
 </html>
+            
+            
